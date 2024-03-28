@@ -39,3 +39,12 @@ const calsAreo=(raduse)=>{
 }
 const al=calsAreo(5)
 console.log(al)
+ const bill=function(pruduct,tax){
+    let total=0
+    for (let i = 0; i < pruduct.length; i++) {
+        total+=pruduct[i]+pruduct[i]*tax
+    }
+    return total
+ }
+ const result=bill([10,13,45],0.2)
+ console.log(result)
