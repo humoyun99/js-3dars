@@ -76,7 +76,35 @@ console.log(al)
     age:26,
     email:'baxronoofxumoyun@gmail.com',
     lang:['uzbek','rus','nimis'],
-    location:'samarqand'
+    location:'samarqand',
+    login:function(){
+        console.log('siz bu saytda sahifangizga kirdingiz')
+    },
+    logout:function(){
+        console.log('siz sahifani tarketingiz')
+    },
+    speak:function(){
+        console.log(this.lang)
+
+    },
  }
- console.log(user)
- console.log(user.location)
+//  console.log(user)
+//  console.log(user.location)
+//  //manabuyirda malumotni uzgartirdik
+//  user.name='sanjar'
+//  console.log(user.name)
+
+user.login()
+user.logout()
+user.speak()
+const movies=[
+    {name:"avatar",like:23},
+    {name:"hary potir ",like:27},
+    {name:"titanik",like:233},
+    {name:"sherlik holms",like:231},
+    {name:"sitiv jobs",like:23},
+]
+movies.forEach((movie)=>{
+    const result=`kinoni nomi: ${movie.name} ,like:${movie.like}`
+    console.log(result)
+})
