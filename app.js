@@ -48,3 +48,9 @@ console.log(al)
  }
  const result=bill([10,13,45],0.2)
  console.log(result)
+ function calsAge(bithday,firstday){
+    const age=2024-bithday
+    console.log(`${firstday} siz ${age} yoshga kirdingiz`)
+    return age
+ }
+ const ag=calsAge(1999,'humoyun')
