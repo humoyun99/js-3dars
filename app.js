@@ -23,3 +23,13 @@ const nice=()=>{
     console.log("this is arraw function")
 }
 nice()
+const sayhello=function(name,day){
+    console.log(`hayrli ${day} ${name}`)
+}
+sayhello('humoyun','tong')
+const calcArea=function(radus){
+    const area=3.14 * radus ** 2
+    return area
+}
+const a=calcArea(5)
+console.log(a)
