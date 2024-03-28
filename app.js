@@ -54,3 +54,29 @@ console.log(al)
     return age
  }
  const ag=calsAge(1999,'humoyun')
+ //bir funksiyani ichiga ikinchi funksiyan yozish
+ const myFunc=(callbackFunk)=>{
+    let number=50
+    callbackFunk(number)
+ }
+ myFunc(function(value){
+    console.log(value)
+ })
+ //for ech
+ const ism=['humoyun','sanjar','ravshan']
+ const newism=[]
+ ism.forEach(function(is){
+    const newIsm=is.charAt().toUpperCase+is.slice(1).toLowerCase+'shoh'
+    newism.push(newIsm)
+ })
+ console.log(newism)
+ //obyiktlar
+ const user={
+    name:'humoyun',
+    age:26,
+    email:'baxronoofxumoyun@gmail.com',
+    lang:['uzbek','rus','nimis'],
+    location:'samarqand'
+ }
+ console.log(user)
+ console.log(user.location)
