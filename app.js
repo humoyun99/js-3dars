@@ -33,3 +33,9 @@ const calcArea=function(radus){
 }
 const a=calcArea(5)
 console.log(a)
+const calsAreo=(raduse)=>{
+    const area=3.14 * raduse ** 2
+    return area
+}
+const al=calsAreo(5)
+console.log(al)
